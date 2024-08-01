@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjbpjaw05s5qi"]
+
+[ext_resource type="Script" path="res://PhysicsBenchmark/Instancer/Instancer.gd" id="1_yheen"]
+[ext_resource type="PackedScene" uid="uid://daj3aobe0myvr" path="res://PhysicsBenchmark/PhysicsCube/PhysicsCube.tscn" id="2_4c4bm"]
+
+[node name="Instancer" type="Marker3D"]
+script = ExtResource("1_yheen")
+to_instance = ExtResource("2_4c4bm")
