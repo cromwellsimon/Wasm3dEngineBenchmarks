@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjbpjaw05s5qi"]
+
+[ext_resource type="Script" path="res://Instancer/Instancer.gd" id="1_yheen"]
+
+[node name="Instancer" type="Marker3D"]
+script = ExtResource("1_yheen")

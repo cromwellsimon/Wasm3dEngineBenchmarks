@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c74fp4jshi4cd"]
+
+[ext_resource type="Script" path="res://RandomDirectionMoverComponent/JS/JsRandomDirectionMoverComponent.gd" id="1_ywvnr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5la5d"]
+
+[node name="SpawnerBenchmarkCube" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_5la5d")
+
+[node name="JsRandomDirectionMoverComponent" type="Node" parent="."]
+script = ExtResource("1_ywvnr")

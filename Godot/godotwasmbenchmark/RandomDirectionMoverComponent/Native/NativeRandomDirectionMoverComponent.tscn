@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c48ml1wfcj7m4"]
+
+[ext_resource type="Script" path="res://RandomDirectionMoverComponent/Native/NativeRandomDirectionMoverComponent.gd" id="1_sc8nd"]
+
+[node name="NativeRandomDirectionMoverComponent" type="Node"]
+script = ExtResource("1_sc8nd")

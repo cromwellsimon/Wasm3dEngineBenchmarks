@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuhqvpiuoycxm"]
+
+[ext_resource type="PackedScene" uid="uid://bjbpjaw05s5qi" path="res://Instancer/Instancer.tscn" id="1_mr6qk"]
+[ext_resource type="PackedScene" uid="uid://c74fp4jshi4cd" path="res://Benchmarks/SpawnerBenchmark/SpawnerBenchmarkCube/SpawnerBenchmarkCube.tscn" id="2_e36tl"]
+
+[node name="SpawnerBenchmark" type="Node3D"]
+
+[node name="Instancer" parent="." instance=ExtResource("1_mr6qk")]
+to_instance = ExtResource("2_e36tl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.79708, -0.316851, 0.514071, 0, 0.851289, 0.524698, -0.603874, -0.418226, 0.678545, 3.80221, 4.04518, 5.09361)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.79708, -0.316851, 0.514071, 0, 0.851289, 0.524698, -0.603874, -0.418226, 0.678545, 3.80221, 4.04518, 5.09361)
+current = true

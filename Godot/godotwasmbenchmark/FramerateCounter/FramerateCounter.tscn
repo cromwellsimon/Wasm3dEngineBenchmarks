@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c647dmlibv1yw"]
+
+[ext_resource type="Script" path="res://FramerateCounter/FramerateCounter.gd" id="1_45kl7"]
+
+[node name="FramerateCounter" type="Node"]
+script = ExtResource("1_45kl7")

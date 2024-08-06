@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfcetn8jvf2h3"]
+[gd_scene load_steps=6 format=3 uid="uid://bfcetn8jvf2h3"]
 
-[ext_resource type="PackedScene" uid="uid://bjbpjaw05s5qi" path="res://PhysicsBenchmark/Instancer/Instancer.tscn" id="1_0rhvu"]
-[ext_resource type="Script" path="res://PhysicsBenchmark/PhysicsBenchmark.gd" id="1_n83gb"]
+[ext_resource type="PackedScene" uid="uid://bjbpjaw05s5qi" path="res://Instancer/Instancer.tscn" id="1_0rhvu"]
+[ext_resource type="Script" path="res://Benchmarks/PhysicsBenchmark/PhysicsBenchmark.gd" id="1_n83gb"]
+[ext_resource type="PackedScene" uid="uid://daj3aobe0myvr" path="res://Benchmarks/PhysicsBenchmark/PhysicsCube/PhysicsCube.tscn" id="3_kxpty"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_tiji6"]
 
@@ -22,6 +23,7 @@ shape = SubResource("BoxShape3D_6bvxr")
 
 [node name="Instancer" parent="." instance=ExtResource("1_0rhvu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 0)
+to_instance = ExtResource("3_kxpty")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.842433, 0.406007, -0.354211, 0, 0.657405, 0.753538, 0.538802, -0.634805, 0.55382, -11.7941, 21.0077, 17.8213)
